@@ -1,1 +1,1 @@
-SECRET_WORD = "Batatinha quando nasce"
+SECRET_WORD = "batatinha quando nasce"

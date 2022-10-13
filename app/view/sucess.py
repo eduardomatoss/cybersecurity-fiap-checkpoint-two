@@ -2,14 +2,13 @@ import streamlit as st
 
 
 def sucess_page():
-    st.header("Verificado com sucesso!!")
+    st.header("Pix successfully performed!!")
 
     st.balloons()
 
     gifList = [
-        "https://media.giphy.com/media/gQ2TrLmmvN19eV0mqB/giphy.gif",
-        "https://media.giphy.com/media/9DgxhWOxHDHtF8bvwl/giphy.gif",
-        "https://media.giphy.com/media/3o6ZtiwjWMoRIpJiIE/giphy.gif",
+        "https://media.giphy.com/media/X8WNVwXFnYWUMFnI4z/giphy.gif",
+        "https://media.giphy.com/media/zFdHAFsieZ7LawRKyW/giphy.gif"
     ]
 
     for i in gifList:

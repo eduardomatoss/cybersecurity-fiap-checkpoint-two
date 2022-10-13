@@ -1,3 +1,5 @@
+from time import sleep
+
 import streamlit as st
 
 from app.services.form_checker import form_main_checker
@@ -19,8 +21,10 @@ def pix_transfer():
             with st.spinner("Recording for 3 seconds ...."):
                 if record_media():
                     st.success("Authorized transaction")
+                    sleep(2)
                 else:
                     st.error("Unauthorized transaction")
+                    sleep(2)
 
         if st.button("Submit"):
             form_main_checker(st.session_state.form)
@@ -31,6 +35,7 @@ def record_media() -> bool:
     file_path = "./record/recorded_pix_audio.wav"
     record = record_audio()
     save_record(file_path, record)
-    if to_text(file_path) == SECRET_WORD:
+    get_text = to_text(file_path)
+    if get_text == SECRET_WORD:
         return True
     return False
