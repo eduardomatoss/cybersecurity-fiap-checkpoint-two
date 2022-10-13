@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  cybersecurity-checkpoint-two:
+    tty: true
+    image: "eduardomatoss/cybersecurity-checkpoint-two"
+    stdin_open: true
+    build:
+      context: .
+      target: "development"
+    volumes:
+      - ".:/app"
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge

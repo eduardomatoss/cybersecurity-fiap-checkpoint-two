@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IDE - VSCode
+.vscode/
+
+# Pipenv lock file
+Pipfile.lock
